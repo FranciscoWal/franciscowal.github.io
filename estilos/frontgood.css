@@ -1,0 +1,255 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+#contenedor{
+    border: 2px;
+    border-color:black ;
+    position: relative;
+    margin: auto;
+    width: 1100px;
+    height: auto;
+    
+   
+}
+[class*="col-"]{
+    
+    float: left;
+    padding: 5px;
+    width: 100%;
+    border: 2px;
+    border-color:black ;
+    
+}
+.fila{
+    
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: table;
+    
+}
+/*-------------------------------
+Modal
+-------------------------*/
+#btn-modal{
+    display: none;
+
+}
+.container-modal{
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 4px;
+
+}
+.content-modal h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal h3{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal p{
+    text-align: center;
+    padding: 15px  0px;
+    border-top: 1px solid rgb(99, 95, 95);
+   /* border-bottom: 1px solid rgb(99, 95, 95);*/
+
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: aqua;
+    color: aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: blue;
+}
+
+
+/*------------------------
+HEADER
+--------------------------*/
+header div{
+    height:350px;
+   align-items: center;
+    
+}
+header div label img{
+    
+    margin-top:5%;
+    
+    
+    
+}
+header div #logoUt{
+    height: 100px;
+    margin-top: 25%;
+    
+    
+}
+header div #perfil{
+
+    height: 300px;
+    border-radius: 100%;
+    margin-left: 45%;
+    transition: all 300ms ease;
+    
+   
+    
+   
+}
+header div #perfil:hover{
+    height: 330px;
+}
+/* -------------------------
+Barra de Navegacion
+---------------------------- */
+
+nav button{
+    width: 85px;
+    height: 50px;
+    margin-top: 20px;
+    
+}
+
+
+
+/* -------------------------
+Articulo
+---------------------------- */
+
+
+.portEv{
+    margin-bottom: 20%;
+   font-size: 40px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#cardp1{
+    background-color:rgb(255, 255, 255) ;
+    transition: all 300ms ease;
+
+}
+#cardp1:hover{
+    background-color:rgb(160, 158, 158) ; 
+}
+#cardp1Body{
+    background-color: rgb(24, 26, 26);
+}
+ .accordion-body p{
+    text-align: justify;
+ }
+
+
+
+
+.cardText{
+    color: blanchedalmond;
+}
+article div{
+    position: relative;
+    height: max-content;
+    margin-top: 20px;
+    
+
+}
+article div div{
+    position: relative;
+    height: max-content;
+  
+    
+
+}
+
+.titulo{
+
+
+width: fit-content;
+height: fit-content;
+left: 506px;
+top: 225px;
+
+
+
+}
+.no{
+    display: none;
+}
+.si{
+    display: block;
+}
+#h1{background-color: rgb(206, 209, 209);}
+
+
+
+
+
+
+
+@media(min-width:1200px){  
+
+    .col-lg-12{width:100%;}  
+    .col-lg-11{width:91.66666667%;}
+    .col-lg-10{width:83.33333333%;}
+    .col-lg-9{width:75%;}
+    .col-lg-8{width:66.66666667%;}
+    .col-lg-7{width:58.33333333% ;}
+    .col-lg-6{width:50%;}
+    .col-lg-5{width:41.66666667%;}
+    .col-lg-4{width:33.33333333%;}
+    .col-lg-3{width:25%;}
+    .col-lg-2{width:16.66666667%;}
+    .col-lg-1{width:8.33333333%;}
+    .col-lg-0{display: none;}
+}
+
+@media(max-width:767px){  
+
+    .col-xs-12{width: 100%;}  
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-10{width: 83.33333333%;}
+    .col-xs-9{width:75% ;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-7{width:58.33333333% ;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.66666667%;}
+    .col-xs-4{width: 33.33333333%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width: 12.66666667%;}
+    .col-xs-1{width: 8.33333333%;}
+    .col-xs-0{display: none;}
+}
